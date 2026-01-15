@@ -3,4 +3,4 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 .venv/
-astro530egg.info/
+astro530.egg-info/
