@@ -58,13 +58,3 @@ def planck_wavenumber(nu_tilde, T):
     lam = (1 / nu_tilde).to(u.m)
     nu = (c / lam).to(u.Hz)
     return planck_nu(nu, T)
-
-# Example usage and comparison with Astropy's BlackBody model
-T = 7000 * u.K
-nu = np.array([1e12, 2e12, 3e12]) * u.Hz
-
-bb = BlackBody(temperature=T)
-
-B_mine = planck_nu(nu, T)
-
-print(bb / B_mine)
