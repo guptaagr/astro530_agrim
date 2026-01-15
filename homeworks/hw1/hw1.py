@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy import units as u
 
-from radiation import planck_wavenumber
+from astro530.radiation import planck_wavenumber
 
 plt.rcParams.update({
     "font.size": 14,
@@ -14,7 +14,7 @@ plt.rcParams.update({
     "axes.formatter.useoffset": False,
 })
 
-nu_tilde_lin = np.linspace(1e-3, 12.0, 2000) / u.micron
+nu_tilde_lin = np.linspace(1e-3, 12.0, 2000) / u.micron # avoid zero to prevent issues with log scale
 nu_tilde_log = np.logspace(-1.0, 1.2, 2000) / u.micron
 
 temps = [10000, 7000, 3000] * u.K

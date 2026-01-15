@@ -48,7 +48,7 @@ def planck_wavenumber(nu_tilde, T):
     B_nu(T) evaluated as a function of wavenumber (1 / lambda).
 
     Inputs:
-        nu_tilde : wavenumber Quantity (e.g. 1 / micron)
+        nu_tilde : wavenumber Quantity
         T        : temperature Quantity (K)
 
     Returns:
