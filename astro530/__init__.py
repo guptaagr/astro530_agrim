@@ -1,1 +1,1 @@
-from .radiation import planck_nu, planck_lambda, planck_wavenumber
+from .planck import planck_nu, planck_lambda, planck_wavenumber
