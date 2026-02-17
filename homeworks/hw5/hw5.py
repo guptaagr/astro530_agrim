@@ -59,7 +59,7 @@ plt.xlabel(r"$\tilde{\nu}\ (\mu{\rm m}^{-1})$")
 plt.ylabel(r"$F_\nu(0)$ (arbitrary units)")
 plt.legend()
 plt.tight_layout()
-plt.savefig("p8d_Fnu_exact_vs_EB.pdf")
+plt.savefig("p8d_Fnu_exact_vs_EB.svg")
 plt.close()
 
 # Fractional difference plot
@@ -72,5 +72,5 @@ plt.axhline(0, lw=1)  # nice visual reference
 plt.xlabel(r"$\tilde{\nu}\ (\mu{\rm m}^{-1})$")
 plt.ylabel(r"Signed fractional difference $(F_{\nu,\mathrm{EB}}-F_{\nu})/F_{\nu}$")
 plt.tight_layout()
-plt.savefig("p8e_signed_fracdiff.pdf")
+plt.savefig("p8e_signed_fracdiff.svg")
 plt.close()
