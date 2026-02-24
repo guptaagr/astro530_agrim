@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Callable, Dict, Tuple
+from typing import Dict
 import numpy as np
 
 THETA_GRID = np.arange(0.2, 2.01, 0.2)
